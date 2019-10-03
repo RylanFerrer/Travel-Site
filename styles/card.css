@@ -1,0 +1,68 @@
+/* Stylings for general card css */
+.card-wrapper {
+	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(300px,3fr));
+	padding: 100px;
+}
+.card {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 400px;
+	display: inline-block;
+	margin:10px;
+	border-radius: 4px;
+	border: 1px solid hsla(0, 0%, 0%, 0.20);
+}
+.card__text {
+	position: absolute;
+	bottom: 0;
+	right:10px;
+	color: white;
+}
+/* Stylings for intinerary cards */
+.card__itinerary-text {
+	color: black;
+	text-align: center;
+}
+.card__itinerary {
+	background-color: white;
+	width: 300px;
+	margin: 10px auto;
+}
+.card__itinerary-menu {
+	list-style-type: none;
+	text-align: center;
+	padding: 0 15px;
+	font-size: 1.5rem;
+}
+.card__itinerary-menu-item {
+	background-color: #f0f0f0;
+	margin: 10px 0;
+	padding:10px;
+}
+/* Card Modifiers */
+.card--greece {
+	background-image: url("../assets/greece.jpg");
+}
+.card--hawaii {
+	background-image: url("../assets/hawaii.jpg");
+}
+.card--iceland {
+	background-image: url("../assets/iceland.jpg");
+}
+.card--box-shadow {
+	box-shadow: 0px 4px 4px 0 hsla(0, 0%, 0%, 0.20);
+}
+/* hover effects for cards */
+.card--greece:hover {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/greece.jpg");
+}
+.card--hawaii:hover {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../assets/hawaii.jpg");
+}
+.card--iceland:hover {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../assets/iceland.jpg");
+}

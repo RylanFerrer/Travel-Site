@@ -1,0 +1,37 @@
+
+.country__background {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1550px;
+
+}
+.country__text {
+    color:white;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    font-size: 3rem;
+   
+}
+/* Modifiers */
+.country__background--greece {
+
+    background-image: url(../assets/greece.jpg);
+  
+
+}
+.country__background--iceland {
+
+    background-image: url(../assets/iceland.jpg);
+
+}
+.country__background--hawaii {
+
+    background-image: url(../assets/hawaii.jpg);
+  
+
+}
+
+

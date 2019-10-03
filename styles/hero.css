@@ -1,0 +1,54 @@
+
+.hero {
+
+    background-color:#f8f8f8;
+    padding: 2rem;
+}
+.hero::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* Stylings for left side of hero */
+.hero__left {
+    padding: 50px;
+    text-align: left;
+    font-weight: bold;
+}
+.hero__left-header-text {
+    font-family: "Comic Sans MS";
+    margin-left: -4px;
+    color:#101d42;
+
+}
+
+.hero__left-button {
+    background-color: #5969d0;
+    color: #fff;
+    width: 15%;
+    padding: 8px 16px;
+    border-radius: 20px;
+  
+}
+
+/* Styling for right side of hero */
+
+.hero__right-image {
+    float: right;
+    width:40%;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero__right-image {
+        width: 100%;
+        display: block;
+    }
+
+    .hero__left-header-text, .hero__left {
+        text-align: center;
+    }
+
+    .hero__left-button {
+        width: 60%;
+    }
+}
